@@ -30,6 +30,9 @@ jobs:
         env: CXX=g++-4.9
       - os: linux
         env: CXX=clang++
+      - os: linux
+        env: CXX=clang++
+        arch: arm64
 
 install:
   - npm install --build-from-source
