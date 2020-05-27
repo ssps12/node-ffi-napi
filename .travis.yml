@@ -36,13 +36,13 @@ matrix:
       os: linux
     - node_js: 10
       env: CXX=clang++
-      os: linux
+      os: osx
     - node_js: 12
       env: CXX=clang++
-      os: linux
+      os: osx
     - node_js: 14
       env: CXX=clang++
-      os: linux  
+      os: osx
     
 jobs:
   exclude:
