@@ -23,6 +23,9 @@ node_js:
   - "10"
   - "12"
   - "14"
+  
+arch: amd64
+      arm64
 
 jobs:
   exclude:
@@ -30,10 +33,7 @@ jobs:
         env: CXX=g++-4.9
       - os: linux
         env: CXX=clang++
-      - os: linux
-        env: CXX=clang++
-        arch: arm64
-
+        
 install:
   - npm install --build-from-source
 
