@@ -19,13 +19,14 @@ os:
 
 osx_image: xcode10
 
-node_js:
-  - "10"
-  - "12"
-  - "14"
-  
-arch: amd64
-      arm64
+matrix:
+  include:
+    - node_js: 10
+      arch: arm64
+    - node_js: 12
+      arch: arm64
+    - node_js: 14
+      arch: arm64
 
 jobs:
   exclude:
